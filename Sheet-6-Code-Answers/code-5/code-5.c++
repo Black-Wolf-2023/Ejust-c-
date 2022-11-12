@@ -2,31 +2,28 @@
 using namespace std;
 
 int main(){
+ 
+  float flag = -99999, max = -99999, min = 999999 , sum = 0 , length = 0,num = 0;
 
-int result = 1;
-int counter = 1;
-int num = 0;
+ cout << "Please Enter Your Numbers and -99999 to end\n";
+  while(num != flag){
+    cin >> num;
+    if(num != flag){
+       
+       if(num > max){
+         max = num;
+       }
+      
+      if(num < min){
+        min = num;
+      }
 
-cout << "Please Enter Your Number\n";
-cin >> num ;
-
-if(num < 0 ){
-    cout << "Please Enter Vaild Value >= 0\n";
-    return 0;
-}
-
-if(num != 0){
-    while (counter < num){
-    result += result * counter;
-    counter++;
+        sum += num;
+        length++;
     }
-    cout << result << endl;
-}else{
-    cout << 0 << endl;
-}
+  }
 
+  cout << "maximum : " << max << endl << "minimum : " << min  << endl << "Sum : " << sum << endl  << "Average : " << sum / length << endl;
 
-
-
-return 0;
+  return 0;
 }
