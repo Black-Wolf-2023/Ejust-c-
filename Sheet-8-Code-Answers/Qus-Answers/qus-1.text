@@ -1,0 +1,7 @@
+1- function prototype example
+      
+      int func(int x , int y);
+
+2- function signture example 
+     
+     func(int x , int y);
