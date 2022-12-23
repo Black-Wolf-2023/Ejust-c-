@@ -5,7 +5,8 @@
     "limits": "cpp",
     "algorithm": "cpp",
     "ostream": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "numeric": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
